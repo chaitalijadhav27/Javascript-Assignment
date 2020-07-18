@@ -1,0 +1,37 @@
+1:<!-- Create a for loop which iterates upto 100 while outputting "fizz" at multiples of 3,"buzz" at multiples of 5 and "fizzbuzz" at
+    multiples 3 and 5 -->
+   
+    
+   <html>
+   <head>
+   <meta charset=utf-8/>
+   <title>FizzBuzz program!</title>
+   <h1>Here is the output:</h1>
+   </head>
+   <body>
+     <script type="text/javascript">
+     var i;
+     for (i=1; i<=100; i++)
+     {
+       if (i%15 == 0)  
+       {
+        document.write(" FizzBuzz \t");
+       }
+       else if ((i%3) == 0)     
+       {
+        document.write(" Fizz \t");
+       }
+       else if ((i%5) == 0)
+       {
+        document.write(" Buzz \t");
+       }
+       else
+       {
+        document.write(i,"\t");
+       }
+     }
+   </script>
+   </body>
+   </html>
+   
+   
