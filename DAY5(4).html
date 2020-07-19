@@ -1,0 +1,94 @@
+<!--Question 4:
+Make a Calculator in Javascript which can do operations as Addtion, Subtraction, Multiplication, Division,
+Square root, Percentage.-->
+
+<!-- <html>
+   <head>
+   <body>
+      <form name="calculator">
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input type="text" name="display" id="display" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+               <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+               <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+               <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+               <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+               <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+               <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+               <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+               <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+               <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+               <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+               <td><input type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+               <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+            </tr>
+         </table>
+      </form>
+   </body>
+   </head>
+</html>-->
+
+<!doctype html>
+<html>
+<head> <h1>Calculator</h1></head>
+<script>
+    var a=prompt('Enter the first value:');
+    var b=prompt('Enter the second value:');
+    var c;
+    function add()
+    {
+        c=  parseInt(a) + parseInt(b);
+        alert("Addition of " +a+ "and " +b+ " is " +c);
+    }
+    function sub()
+    {
+        c=a-b;
+        alert("Subtraction of " +a+ "and " +b+ " is " +c);
+    }
+    function mul()
+    {
+        c=a*b;
+        alert("Multiplication of " +a+ "and " +b+ " is " +c);
+    }
+    function div()
+    {
+        c=a/b;
+        alert("Division of " +a+ "and " +b+ " is " +c);
+    }
+    function sqrt()
+    {
+        var num=prompt('Enter the number');
+        sqrt=num*num;
+        alert('Square root of no: '+num+ ' is ' +sqrt)
+    }
+    function Percentage()
+    {
+      var total= prompt('Enter the total marks');
+      var marks=prompt('Enter the marks')
+      var Percentage=marks/total*100;
+      alert('Percentage is '+Percentage)
+
+    }
+</script>
+<button onclick='add()'>ADD</button>
+<button onclick='sub()'>SUB</button>
+<button onclick='mul()'>MUL</button>
+<button onclick='div()'>DIV</button>
+<button onclick='sqrt()'>SQRT</button>
+<button onclick='Percentage()'>Percentage</button>
+</body>
+</html>

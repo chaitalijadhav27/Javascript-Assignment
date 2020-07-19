@@ -1,0 +1,31 @@
+2:<!-- Destructure the following object:- -->
+
+
+<html>
+    <head>
+        <title>Object Destructing Program!</title>
+        </head>
+        <body>
+            <script type="text/javascript">
+           const student = {
+            name: "Helsinki",
+            age: 24,
+           project: {
+                diceGame: "Two player dice game using JavaScript"
+           }
+        };
+    
+// SOL:-
+const {
+    name,
+    age,
+    project: {
+        diceGame
+    }
+} = student;
+alert(name);
+alert(age);
+alert(diceGame);
+</script>
+</body>
+ </html>s
